@@ -1,38 +1,861 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px 0px 0px;
+  padding: 0px 0px 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.Header{
+  height: 46.8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.Header2{
+  height: 70px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+}
+.subheader{
+  width: 282.5px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+.subheader p{
+  color: #757575;
+  font-size: 13px;
+  font-family: 'Poppins',sans-serif;
+  padding: 12px 0px 0px;
+  margin: 0px 0px 10px;
+  word-spacing: 3px;
+}
+.subheader2{
+  width: 646.6px;
+  height: 46px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.phone-logo{
+  width: 25px;
+  height: 60%;
+}
+.phone-logo img{
+  width: 80%;
+  height: 80%;
+}
+.subheader2-phone{
+  width: 131px;
+  height: 99%;
+  color: #747474;
+  font-size: 13px;
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  align-items: center;
+}
+.subheader2-date{
+  width: 234px;
+  height: 99%;
+  font-size: 13px;
+  color: #747474;
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  align-items: center;
+}
+.subheader2-mail{
+  width: 173px;
+  height: 99%;
+  color: #747474;
+  font-size: 13px;
+  font-family: 'Poppins',sans-serif;
+  display: flex;
+  align-items: center;
+}
+.Header-logo{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Headerlogo-img{
+  width: 20%;
+  height:80%;
+  display: flex;
+  justify-content: center;
+}
+.Headerlogo-img img{
+  width: 65%;
+  height: 90%;
+}
+.Header2-button{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+.Header2-button a{
+  text-decoration: none;
+  color: #555555;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all ease-in 0.2s;
+  
+}
+.Header2-button a:hover{
+  color: white;
+  font-size: 16px;
+}
+.Header2-button span{
+  background-color: #A5C422;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 3px;
+  transition: all ease-in 0.7s;
+}
+.Header2-button span:hover{
+  background-color: rgba(38, 38, 214, 0.649);
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.d-block{
+  height: 670px;
+  width: 100%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.Carousel-info{
+  top: 40%;
+}
+.Carousel-info h5{
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 3px 5px #393939;
+  font-weight: bold;
+}
+.Carousel-info h3{
+  font-size: 14px;
+  color: white;
+  letter-spacing: 2px;
+}
+.Carousel-info span{
+  background-color: #393939;
+  color: white;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 3px;
+  transition: all ease-in 0.5s;
+  
+}
+.Carousel-info span:hover{
+  background-color: white;
+  color: #393939;
+  font-size: 15px;
+  cursor: pointer;
+}
+.aboutus{
+  height: 100vh;
+  width: 1520px;
+  background-image: url("https://c8.alamy.com/comp/J49PNA/color-landscape-with-hospital-of-background-and-doctor-with-stethoscope-J49PNA.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-content{
+  width: 1170px;
+  height: 355px;
+}
+.content-heading{
+  width: 555px;
+  height: 130px;
+  margin: 5px;
+}
+.content-heading h2{
+  font-size: 42px;
+  color: #272727;
+  font-family: 'Poppins'sans-serif;
+  font-weight: bold;
+  margin: 10px;
+}
+.content-data{
+  width: 555px;
+  height: 106px;
+  margin: 5px;
+}
+.content-data p{
+  color: #757575;
+  font-size: 14px;
+  margin: 5px;
+}
+.content-bio{
+  width: 555px;
+  height: 79px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.bio-image{
+  width: 65px;
+  height: 65px;
+  margin: 14px 14px;
+}
+.bio-image img{
+  height: 99%;
+  width: 99%;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.bio-name{
+  width: 186px;
+  height:55px;
+}
+.name-head{
+  height: 30px;
+}
+.name-head h3{
+  font-size: 25px;
+  color: #333333;
+  font-weight: bold;
+}
+.name-title{
+  height: 24px;
+}
+.name-title p{
+  font-size: 14px;
+  color: #757575;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.Doctor{
+  height: 250vh;
+  width: 100%;
+  padding: 100px;
+}
+.Doctor-title{
+  width: 555px;
+  height: 70px;
+}
+.Doctor-title h2{
+  font-size:42px;
+  font-weight: bold;
+  color: #272727;
+  margin: 10px;
+}
+.Doctor-card{
+  height: 1500px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.image{
+  height: 450px;
+  width: 10px;
+}
+.card-group{
+  width: 360px;
+  margin: 10px;
+  border: none;
+  box-shadow: 2px 2px 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-body{
+  background-color: #F9F9F9;
+}
+.card-detail{
+  color: #757575;
+  font-size:14px;
+}
+.card-detail span{
+  display: flex;
+}
+.detail-image{
+  height: 16px;
+  width: 15px;
+  margin: 3px;
+}
+
+
+
+.News{
+  height: 110vh;
+  background-color: #d6d6d3a3;
+  padding: 100px;
+}
+.News-title{
+  width: 1140px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.News-title h2{
+  color: #272727;
+  font-weight: bold;
+  font-size: 42px;
+}
+.News-card{
+  height: 550px;
+  width: 1140px;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Newscard-Image{
+  width: 360px;
+  height: 230px;
+}
+.Newscard-body{
+  width: 340px;
+  height: 260px;
+}
+.Card-date{
+  width: 300px;
+  height: 20px;
+}
+.Card-date span{
+  font-size: 14px;
+  color: #333333;
+}
+.Card-title{
+  width: 300px;
+  height: 66px;
+}
+.Card-title span{
+  font-size: 25.2px;
+  font-weight: bold;
+  color: #252525; 
+}
+.Card-text{
+  width: 300px;
+  height: 48px;
+}
+.Newscard-bio{
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Newscardbio-image{
+  width: 64px;
+  height: 64px;
+}
+.Newscardbio-image img{
+  width: 99%;
+  height: 99%;
+  border-radius: 30px;
+}
+.Newscardbio-name{
+  width: 200px;
+  height: 55px;
+}
+.Newscardname-head{
+  width: 200px;
+  height: 26px;
+}
+.Newscardname-head h3{
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Newscardname-title{
+  width: 200px;
+  height: 30px;
+}
+.Newscardname-title p{
+  color: #757575;
+  font-size: 14px;
+}
+
+
+
+.Appointment{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.Appointment img{
+  margin-top: 70px;
+  width: 45%;
+  height: 85%;
+}
+.Appointment-data{
+  width: 585px;
+  height: 577px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+.Appointmentdata-head{
+  width: 555px;
+  height: 70px;
+}
+.Appointmentdata-head h2{
+  font-weight: bold;
+  font-size: 42px;
+  color: #272727;
+  margin: 11px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Appointmentdata-form{
+  width: 525px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Appointmentdata-form1{
+  width: 525px;
+  height: 85px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Appointmentdata-subform1{
+  height: 85px;
+  width: 247px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.subform1-name{
+  width: 140px;
+  height: 20px; 
+}
+.subform1-name h4{
+  font-size: 16px;
+}
+.subform1-input{
+  width: 247px;
+  height: 45px;
+}
+.subform1-input input{
+  width: 99%;
+  height: 99%;
+  border-radius:4px;
+}
+.subform1-input input::placeholder{
+  background-color: #b4b4b42a;
+  padding: 10px;
+}
+.subform1-input select{
+  width: 99%;
+  height: 99%;
+  border-radius:4px;
+}
+.Appointmentdata-form2{
+  width: 525px;
+  height: 85px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Appointmentdata-form3{
+  width: 525px;
+  height: 65px;
+}
+.subform3-name{
+  margin-left: 10px;
+  width: 130px;
+  height: 20px;
+}
+.subform3-name h4{
+  font-size: 16px;
+}
+.subform3-input input {
+ height: 99%;
+ width: 95%;
+ margin-left: 10px;
+ border-radius: 3px;
+}
+.subform4-name h4{
+  font-size: 16px;
+  margin-left: 10px;
+}
+.subform4-input textarea{
+  height: 99%;
+ width: 95%;
+ margin-left: 10px;
+ border-radius: 3px;
+}
+.subform3-input{
+  width: 525px;
+  height: 45px;
+}
+.subform4-name{
+  width: 150px;
+  height: 20px;
+}
+.subform4-input{
+  width: 525px;
+  height: 112px;
+}
+.Appointmentdata-form4{
+  width: 525px;
+  height: 132px;
+}
+
+.Appointmentdata-button{
+  width: 500px;
+  height: 55px;
+  margin-left: 10px;
+}
+.Appointmentdata-button button{
+  background-color: #A5C422;
   color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in 0.5s;
+  
+}
+.Appointmentdata-button button:hover{
+  background-color: rgba(0, 0, 0, 0.804);
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.container{
+  height: 60vh;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+.container iframe{
+  width: 100%;
+  height: 100%;
+  filter: invert(100);
+}
+.Footer{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Footer-head{
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Footer-foot{
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.Contact{
+  width: 23%;
+  height: 80%;
+}
+.Openinghour{
+  width: 23%;
+  height: 80%;
+}
+.Latestnews{
+  width: 23%;
+  height: 80%;
+}
+.contact-details{
+  height: 50%;
+  width: 99%;
+}
+.details{
+  height: 45%;
+  display: flex;
+}
+.details-image{
+  width: 10%;
+  height: 70%;
+}
+.details-info{
+  width: 70%;
+  height: 70%;
+}
+.details-image img{
+  height: 60%;
+  width: 80%;
+}
+.details-info p{
+  font-size: 15px;
+  color: #757575;
+}
+.Contact h4{
+  font-size: 25.2px;
+  color: #454545;
+  font-weight: bold;
+}
+.Contact p{
+  color: #757575;
+  font-size: 14px;
+}
+.Latestnews h4{
+  font-size: 25.2px;
+  color: #454545;
+  font-weight: bold;
+}
+.Latestnews-bio{
+  height: 30%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.latestbio-image{
+  height: 90%;
+  width: 25%;
+}
+.latestbio-image img{
+  height: 64px;
+  width: 64px;
+  border-radius: 30px;
+  
+}
+.latestbio-detail{
+  height: 80%;
+  width: 70%;
+}
+.latestbio-detail h5{
+  color: #757575;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+.latestbio-detail span{
+  color: #858585;
+  font-size: 14px;
+}
+.Openinghour h4{
+  font-size: 25.2px;
+  color: #454545;
+  font-weight: bold;
+}
+.schedule p{
+  font-size: 15px;
+  color: #757575;
+}
+.icons{
+  height: 15%;
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+} 
+.logo{
+  width: 30%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo:hover{
+  background-color: rgba(236, 225, 9, 0.812);
+  cursor: pointer;
+  border-radius: 30px;
+  filter: invert(100);
+}
+.icons img{
+  height: 50%;
+  width: 35%;
+}
+.Foot1{
+  width: 30%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 13px;
+  color: #858585;
+  
+}
+.Foot2{
+  width: 40%;
+  height: 80%;
+  list-style: none;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  font-size: 13px;
+  color: #858585;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+/* .Login-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+.login{
+  width: 400px;
+  background: #fff;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.login input{
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+}
+.button{
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius:8px ;
+  outline: none;
+  cursor: pointer;
+}
+.register-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+.register{
+  width: 400px;
+  background: #fff;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%),0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.register input{
+  border-radius: 8px;
+  border: 2px solid #dddfe2;
+  outline: none;
+  color: #848b99;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 92%;
+  font-size: 1rem;
+} */
+
+
+.card{
+  box-shadow: 0 0 2px gray;
+  border-radius: 0 !important;
+  
+}
+.normal-text{
+  font-size: 1rem;
+}
+.authentication{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #005555;
+}
+.authentication-form{
+  width: 400px;
+}
+.registerinput{
+  border-radius: 2px !important;
+  border: 1px solid rgba(128, 128, 128, 0.651) !important;
+  height: 40px !important;
+}   
+.registerinput:focus{
+  outline: none !important;
+  border: 1px solid gray !important;
+  box-shadow: none !important;
+} 
+.registerlabel{
+  color: black;
+  font-size: 16px;
+}
+
+.ant-form-item{
+  margin: 10px 0 !important;
+}
+.Primary-Button{
+  background-color: black;
+  border-color: #005555;
+  height: 40px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+.anchor{
+  color: black;
+  text-decoration: underline;
+  font-size: 16px;
+}
+.anchor:hover{
+  text-decoration: underline;
+}
+.authcard-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: orangered;
+  max-width: max-content;
+  padding: 7px 15px;
+  margin-left: -40px;
+  border-bottom-left-radius: 10px;
+}
+
+.Containerdoctor{
+  height: 100vh;
+}
+
+.Containerdoctor h4{
+  margin: 35px;
+}
+.Col{
+  width: 40%;
+  text-align: center;
+  margin: 10px 35px;
+}
+.Colbtn{
+  width: 40%;
+}
+#applybutton{
+  width: 40%;
+  font-size: 14px;
+  position: absolute;
+  top: 100%;
+  left: -5%;
 }
